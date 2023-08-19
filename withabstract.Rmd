@@ -1,0 +1,630 @@
+---
+output:
+  bookdown::pdf_book:
+    toc_depth: 2
+    fig_height : 5
+    fig_width : 8
+    citation_package: natbib
+    includes:
+      in_header: import.sty 
+      before_body: tile.sty
+documentclass: report
+classoption : oneside
+bibliography: references.bib
+csl: ama.csl
+geometry: [top=1in, bottom=1in, right=1.5cm, left=2cm]
+linestretch: 1.5
+fontsize: 12pt
+---
+\pagenumbering{gobble}
+
+\newpage
+
+\listoftables
+
+\newpage
+
+\pagenumbering{arabic}
+
+```{r, include=FALSE}
+knitr :: opts_chunk$set(echo=F, warning=F, message=F, fig.align = 'center',comment=NA)
+```
+
+# 
+
+## Introduction of icddr,b
+
+As a project intern at the International Centre for Diarrheal Disease Research, Bangladesh (ICDDR,B), I was assigned to the study that is the subject of this article. The icddr,b and its goals are briefly described in this chapter. It gives a brief overview of the project's goals and the project to which I was assigned. The exact duties that I was given while working on this project as an intern are also mentioned.
+
+
+## About icddr,b
+
+The South-East Asia Treaty Organisation (SEATO) Cholera Research Laboratory (icddr,b) was founded in Dhaka in the 1960s. In research on diarrheal diseases, the Cholera Research Laboratory (CRL) quickly gained a reputation on a global scale. The creation, testing, and adoption of oral rehydration solution (ORS), a treatment that is thought to have saved tens of millions of lives globally, was one of its early major accomplishments. The CRL was given a new lease on life in 1978 when it was given the moniker International Centre for Diarrheal Disease Research, Bangladesh. Its sole name in recent years has been icddr,b.In order to address the main public health problems that Bangladesh and other countries in the global South face, icddr,b continued to extend its research. Numerous research initiatives have been carried out in fields like maternal, neonatal, respiratory, and vaccine testing.
+
+## Major Achievements
+
+Here’s a brief list of some major achievements of icddr,b:
+  
+ * Oral Rehydration Solution
+ * Zinc Treatment for Diarrhea
+ * Tetanus Toxoid Vaccine for Mothers
+ * Guidelines for Treating Severe Malnutrition
+ * Testing Vaccines
+ * Family Planning Solutions
+ * Domestic Violence Legislation
+ * Mat for Measuring Maternal Blood Loss
+ * Ultra Low-cost CPAP(Continuous positive airway pressure therapy) Device for se- vere pneumonia
+ * Supplementary and therapeutic foodstuffs to prevent and treat malnutrition
+
+
+## Internship Goal
+Internships are generally thought of as a way to gain experience in a particular field. However, a wide array of people can benefit from Training Internships in order to receive real world experience and develop their skills. The following are the objectives of my internship:
+
+* Apply statistical knowledge and concepts to real world decision making.
+* Increase proficiency in specific statistical disciplines.
+* Develop and improve skills in communication,quantitative reasoning,and teamwork.
+* Meet professional role models and potential mentors who can provide guidance, feedback, and support.
+* Expand network of professional relationships and contacts.
+* Learn in details about the healthcare facilities of Bangladesh and how they work.
+* Develop a solid work ethic and professional demeanor, as well as a commitment to ethical conduct and social responsibility.
+
+##  My Assignmentment
+
+During the internship period I was a member of a team at MCHD department. Our task was to find out if there is any trend in the improved sanitation condition of Bangladesh using available BDHS data of 2007 to 2017/18 and also point out the factors behind the trend if any. Following responsibilities were assigned to me as an intern :
+
+* Literature review for analysis 
+* Make an analysis plan
+* Analyze the descriptive statistics
+* Creating dummyt tables 
+* Interpret the findings
+* Help to write the final report
+
+
+# 
+
+## Introduction of the study
+
+Pneumonia and serious infections are leading cause of under-five death in Bangladesh. More than 30,000 under-five death are occured due to these reason. WHO recommended to follow Integrated management of childhood illness(IMCI) to manage these serious diseases in outpatient departments. For IMCI, there is a dedicated service register, monthly reporting form and DHIS2 report to track the progress. IMIC guidelines suggests that  child pneumonia and serious infection referred to higher level facilities for indoor management. But there is no dedicated register, monthly reporting form and DHIS2 report in Bangladesh. As a result, taking proper policy becomes difficult. So introducing a standardized register can keep a positive impact here and can be helped to improve skil of healthcare providers.It is important to track management to achieve the SDG target of reducing under-five deaths and neonatal deaths.a national technical committee was formed to develop a standardized register system.The National Newborn Health and IMCI programme helps to demonstrate the inpatient register in selected districts to inform evidence-based scale up.
+
+## Literature review
+
+\citet{wong2009developing}did a study on medical records accessibility and completeness and physician satisfaction in Ethiopia.
+\citet{schmidt2014danish} shows that (Civil Registration System) CRS allows for technically easy, cost-effective, and unambiguous individual-level record linkage of Danish registers. 
+\citet{pavlovic2021electronic} studies aimed to detect the factors that influence the acceptance of electronic health record(EHR).
+\citet{wilkins2009factors} detected all factors that influenced acceptance of electronic health record(EHR).
+\citet{lakbala2014physicians} explored physicians, attitude and perceptions for different functions of electronic medical records(EMR).
+\citet{ludwick2009adopting} explored the acceptance of electronic medical records(EMR) in primary care in seven countries.
+
+## Objectives of the study
+
+The objective of the study is to assess the usability, acceptability , adoption , fidelity, utility and inpatinet register for managing sick newborns and children in selection facilities of Bangladesh.
+
+# Methodology
+
+## Study design 
+
+A research study was conducted where the national newborn health and IMIC programmed designed, developed and demonstrated a standardized inpatinet for newborn and sick-children.Icddr,b provided implementation facilitation support and assessments.
+
+## Study setting
+
+The study was conducted in Kushtia and Dinajpur district of Bangladesh. The standardized register was introduced in the pediatric department of district hospitals and all government sub-district hospitals of kushtia and Dinajpur district. 
+
+## Introduction of the register
+
+### Development 
+
+The national newborn health and IMIC programme designed and developed the register system. To do this, a technical committee was formed under leadership of the national newborn health and IMIC programme.The team at first visited one district hospital and one sub district hospital to explore the existing methods/documents practices in the health facilities system and they mainly focus on the pediatric inpatient department. After that, they extract data from the pediatric department to understand the different types of caseloads and their management. 
+They also reviewed different national and global guidelines, strategies, case recordings forms and others available there.
+
+Four workshop were organizd by the technical committee to develop the register and they take some decisions from these discussions such as ,
+
+ * Population : under five
+ * Cover all diseases but with special focus on pneumonia and serious infection
+ * Follow WHO pocket book for hospital care of children
+ * The register should allow tracking of use of antibiotics in inpatient department.
+ * Use ICD-10 code for diagnosis
+ * Develop monthly reporting form based on the register
+ * Register to be filled by nurses from case-record forms
+
+```{r fig.cap= "Questions in the register",fig.pos="H", fig.width=20}
+knitr::include_graphics("qus.png")
+```
+
+### Implementation
+
+The study is implemented in 
+
+ * District and facility sensitization workshop
+ * ToT for doctors 
+ * Training of nurses
+ * Supply register and reporting forms
+ * Monitoring and evaluation 
+
+
+## Study  participants
+
+In that study, data are collected from sick newborn and under-five children admitted in the pediatric inpatient department. Service providers(doctors and nurses) and their supervisors,
+Facility managers, district and sub-district health managers, national level health workers and policy makers.
+
+## Sampling and sample size 
+
+Here, a non-probabilistic sampling method named time quota sampling is used. This sampling is useful when time is limited, a sampling frame is not available, and the research budget is very tight. For this study, data is collected until the desired sample size is reached. For this study, a 4% margin of error and a 99% confidence level are considered. The population is considered infinite. All the domain's categories (type, age group, district, and sex) make 32 combinations. So per group, the estimated sample size is 372; for the overall 32 combinations, the total sample size is 11904.
+
+## Data collection 
+
+Data is collected from 1st, November 2022 to 31th, January 2023 (3 months duration).
+At first, icddr,b nurses records some basic information from hospital coming under five patients and that is called tracker register. After that, hospital's nurses collected data from inpatient.That is called registered.Then again icddr,b nurses collected data from registered patients.That is called case registered.Total 11737 data are collected and case-recording data are 5062.
+
+# Analysis
+
+In that paper mainly focused on descriptive data analysis. Descriptive analysis is calculated for different questions vs different groups. These analysis gives us a overview of the new system and it's effectiveness and also helps us to detect the lagging of hospitals and this sytem and it's advantages also.
+
+## Overall table 
+In that table, a descriptive statistics of all variables is shown. This table gives me a overall idea of the dataset.The table gives an overview of basic informations of all 11737 patients.
+
+```{r}
+library(kableExtra)
+
+collapse_rows_dt <- data.frame(Variable =  c(rep("Age", 5), rep("Sex",4),rep("District",3),rep("Facility type",3), rep("Month",4),rep("Disease",6), rep("Outcome of treatment",7), rep("Overall",1)),
+                               Background = c("0-28 days","29-2months","2 months-1year","1 year-5 years","Missing","Male","Female","Others","Missing","Kushtia","Dinajpur","Missing","DH","UHC","Missing","November","December","January","Missing","Newborn Sepsis","Birth Asphyxia","Prematurity and LBW","Severe Pneumonia","Diarrhea","Bronchiolitis","Discharge with advice","Discharge on request","DORB","Refer","Absconded","Death","Missing","Overall"),
+                              N= c(1320,472,4084,5861,0,6663,4486,26,562,8167,3570,0,604,75690,0,2881,4339,4372,145,59,270,141,1251,4235,661,3982,2529,674,682,956,42,2872,11737),
+                              Percentage = c(11.25,4.02,34.8,49.94,0,59.62,40.14,0.23,0,69.58,30.42,0,51.52,48.48,0,24.85,37.43,37.72,0,0.5,2.3,1.2,10.66,16.08,5.63,44.92,28.53,7.6,7.69,10.78,0.47," "," "))
+kbl(collapse_rows_dt,caption = "Overall Background", align = "c") %>%
+                                 kable_paper(full_width = F) %>%
+                                 column_spec(1, bold = T) %>%
+                                 collapse_rows(columns = 1:2, valign = "middle") %>% 
+                                 kable_styling(latex_options = "hold_position")
+
+
+```
+
+\newpage
+
+## Compilation table
+Completeness table gives an overview whether, nurses are serious to fill up the register.
+
+```{r}
+registration =setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(99.22,99.3,99.12,99.58,99.76,99.61,99.22,99.23,99.3,99.26),
+  "Lower" = c(98.97,99.04,98.9,99.31,65.07,99.37,98.91,99,98.1,99.08),
+  "Upper" = c(99.43,99.5,99.31,99.76,67.9,99.77,99.47,99.42,98.82,99.41),
+  n = c(6000,5650,8095,3555,2874,4322,4338,6964,4686,11650)
+),  c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(registration,caption = "Completeness of Registration Number" , align = "c") %>%
+    kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+admission = setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(98.46,99.09,98.42,99.55,100,100,100,98.53,99.11,98.76),
+  "Lower" = c(98.12,98.8,98.13,99.27,65.23,99.92,99.92,98.22,98.8,98.55),
+  "Upper" = c(98.76,99.32,98.68,99.74,68.06,1,1,98.8,99.36,98.96),
+  n = c(5954,5638,8038,3554,2881,4339,4372,6915,4677,11592)
+),  c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(admission,caption = "Completeness of Date of Admission", align = "c") %>%
+    kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+timeadd = setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(88.8,86.99,89.47,84.4,90.42,88.78,87.79,88.71,86.76,87.93),
+  "LowerCI" = c(87.98,86.1,88.78,83.17,68.8,87.8,86.78,87.95,85.76,87.32),
+  "Upper" = c(89.59,87.86,90.12,85.57,61.74,89.7,88.74,89.45,87.71,88.51),
+  n = c(5370,4950,7307,3013,2605,3852,3838,6226,4094,10320)
+), c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(timeadd,caption = "Completeness of Time of Admission", align = "c") %>%
+    kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+
+
+named = setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(99.74,99.58,99.71,99.55,99.58,99.61,99.75,99.74,99.53,99.66),
+  "Lower" = c(99.57,99.37,99.56,99.27,64.95,99.37,99.55,99.59,99.3,99.54),
+  "Upper" = c(99.85,99.73,99.81,99.74,67.79,99.77,99.87,99.85,99.71,99.76),
+  n = c(6031,5666,8143,3554,2869,4322,4361,7000,4697,11697)
+),  c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(named,caption = "Completeness of Name", align = "c") %>%
+    kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+aged = setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(100,100,100,100,100,100,100,100,100,100),
+  n = c(6047,5690,8176,3570,2881,4339,4372,7018,4719,11737)
+),  c("Variable", "Category","Percentage","n"))
+kbl(aged,caption = "Completeness of Age", align = "c") %>%
+   kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+sexd = setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(93.95,96.56,94.67,96.44,95.59,95.02,95.24,94.37,96.46,95.21),
+  "Lower" = c(93.32,96.05,94.17,95.78,62.27,94.33,94.57,93.8,95.89,94.81),
+  "Upper" = c(94.54,97.01,95.15,97.03,65.16,95.65,95.85,94.9,96.97,95.59),
+  n = c(5681,5494,7732,3443,2754,4123,4164,6623,4552,11175)
+),  c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(sexd, caption = "Completeness of Sex",align = "c") %>%
+   kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+dist = setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(97.8,96.4,96.72,98.04,97.85,96.91,96.91,98.01,95.8,97.12),
+  "Lower" = c(97.4,95.88,96.31,97.53,63.78,96.35,96.36,97.65,95.2,96.8),
+  "Upper" = c(98.16,96.87,97.1,98.47,66.65,97.41,97.4,98.32,96.36,97.42),
+  n = c(5914,5485,7899,3500,2819,4205,4237,6878,4521,11399)
+), c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(dist,caption = "Completeness of District", align = "c") %>%
+    kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+inve = setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(19.51,1.56,14.13,3.22,16.94,9.26,8.33,17.07,1.5,10.81),
+  "Lower" = c(18.52,1.26,13.38,2.67,10.36,8.42,7.52,16.2,1.18,10.26),
+  "Upper" = c(20.54,1.92,14.9,3.85,10.27,10.17,9.18,17.97,1.89,11.39),
+  n = c(1180,89,1154,115,488,402,364,1198,71,1269)
+), c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(inve,caption = "Completeness of Investigation Done", align = "c") %>%
+   kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+
+care= setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(69.03,74.11,69.84,75.27,71.82,70.78,72.44,69.75,74.08,71.49),
+  "Lower" = c(67.84,72.95,68.83,73.82,46.37,69.4,71.08,68.66,72.81,70.67),
+  "Upper" = c(70.19,75.25,70.84,76.67,49.37,72.13,73.76,70.82,75.33,72.31),
+  n = c(4174,4217,5704,2687,2069,3071,3167,4895,3496,8391)
+), c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(care,caption = "Completeness of Care Received during admission", align = "c") %>%
+    kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+
+drug= setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(81.48,93.39,84.9,92.63,85.7,88.08,87.85,82.46,94.38,87.25),
+  "Lower" = c(80.48,92.72,84.11,91.73,55.63,87.08,86.5,81.55,93.69,86.64),
+  "Upper" = c(82.45,94.02,85.67,93.47,58.61,89.03,88.8,83.34,95.02,87.85),
+  n = c(44927,5314,6934,3307,2469,3822,3841,5787,4454,10241)
+), c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(drug, caption = "Completeness of Drug received during admission",align = "c") %>%
+    kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+
+
+diagno= setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(61.5,79.26,64.52,82.91,70.77,71.12,69.56,63.89,79.36,70.11),
+  "Lower" = c(60.26,78.18,63.47,81.64,45.68,69.75,68.16,62.76,68.18,69.28),
+  "Upper" = c(62.73,80.3,65.55,84.13,48.68,72.47,70.92,65.02,80.51,70.94),
+  n = c(3719,4510,5269,2960,2039,3086,3041,4484,3745,8229)
+),  c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(diagno,caption = " Completeness of Final diagnosis", align = "c") %>%
+    kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+
+trt= setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(68.46,83.04,71.43,84.9,79.76,76.35,72.67,71.79,81.1,75.53),
+  "Lower" = c(67.28,82.04,70.44,83.68,51.67,75.06,71.32,70.72,79.95,74.74),
+  "Upper" = c(69.63,84,72.41,86.06,54.67,77.61,73.98,72.84,82.2,76.3),
+  n = c(4140,4725,5834,3031,2298,3313,3177,5038,3827,8865)
+),  c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(trt, caption = "Completeness of outcome of treatment", align = "c") %>%
+    kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+
+
+all_i= setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(12.02,0.74,8.75,1.51,9.82,6.04,5.12,10.5,0.68,6.55),
+  "Lower" = c(11.21,0.53,8.15,1.13,5.83,5.35,4.49,9.79,0.46,6.11),
+  "Upper" = c(12.87,1,9.39,1.97,7.33,6.79,5.82,11.24,0.96,7.01),
+  n = c(727,42,715,54,283,262,224,737,32,769)
+),  c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(all_i, caption = "Completeness of All items", align = "c") %>%
+   kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+
+
+all_t= setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(65.11,77.15,67.38,79.1,74.49,71.19,70.38,67.13,76.63,70.95),
+  "Lower" = c(63.89,76.04,66.35,77.73,48.15,69.82,69,66.01,75.39,70.12),
+  "Upper" = c(66.31,78.24,68.4,80.43,51.15,72.54,71.73,68.23,77.83,71.77),
+  n = c(3937,4390,5503,2824,2146,3089,3077,4711,3616,8327)
+),  c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(all_t,caption = "Completeness of at least 10 items", align = "c") %>%
+    kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+
+```
+
+\newpage
+## Quality of care tables
+
+Quality of care tables are important tables to check the quality of care in district and upazila hospitals. These tables give an overview of how many patients got care among those who needed these facilities.
+
+
+```{r}
+spo = setNames(data.frame(
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(66.67,14.67,19.72,17.39,25,13.46,12.5,24.68,14.77,19.39),
+  "Lower" = c(38.38,9.42,13.52,4.95,16.37,5.58,2.66,15.56,8.11,13.66),
+  "Upper" = c(88.18,21.36,27.22,38.78,35.37,25.79,32.36,35.82,23.94,26.26),
+  n = c(10,22,28,4,22,7,3,19,13,32)
+), c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(spo,caption = "Quality of care SpO2(Oxygen)",  align = "c") %>%
+    kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+
+nspe= setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(56.41,15,57.89,14.29,34.48,47.83,57.14,45.28,16.67,61.02),
+  "Lower" = c(39.62,3.21,40.82,3.04,17.94,26.82,18.4,31.56,0.42,47.44),
+  "Upper" = c(72.19,37.89,73.67,36.34,54.33,69.41,90.1,59.55,64.12,73.45),
+  n = c(22,3,22,3,10,11,4,24,1,36)
+),c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(nspe,caption = "Quality of care  Newborn Sepsis(Inj Antibiotics)", align = "c") %>%
+   kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+
+osneu= setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(56.85,16.7,51.65,12.72,37.33,47.01,43.6,52.58,9.54,42.85),
+  "Lower" = c(53.37,13.03,48.45,9.07,43.1,14.68,24.92,49.38,6.38,40.08),
+  "Upper" = c(60.27,20.23,54.84,17.17,53.45,59.85,33.18,55.77,13.58,45.64),
+  n = c(465,71,500,36,140,181,211,509,27,536)
+), c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(osneu,caption = "Quality of care  Severe Pneumonia(oxygen)", align = "c") %>%
+    kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+
+
+ij =  setNames(data.frame(
+  
+  Variable = c(rep("Facility Type",2), rep("District",2),rep("Month",3), rep("Supervised",2),rep("Overall",1)),
+  Category = c("District","UHC","Kushtia","Dinajpur","November","Decmber","January","Yes","No","Overall"),
+  Percentage = c(38.75,47.34,39.26,50.18,50.93,43.64,33.26,41.63,42.05,41.73),
+  "Lower" = c(35.4,42.55,36.17,44.2,45.75,38.61,29.08,38.5,36.23,38.98),
+  "Upper" = c(42.19,52.17,42.41,56.15,56.1,48.75,37.66,44.81,48.04,44.52),
+  n = c(317,205,380,142,191,168,161,403,119,522)
+),c("Variable", "Category","Percentage","Lower CI","Upper CI","n"))
+kbl(ij, caption = "Quality of care  Severe Pneumonia(Inj Antibiotics)",align = "c") %>%
+   kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+ 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+
+```
+
+\pagebreak
+\newpage
+
+## Adoption table
+
+Every day, may there be many people in district and upazila hospitals. but nurses may not register all of them for various reasons. As a result, all patient information is not recorded in the register book. The adoption table indicates how many patients information is registered in the register book among those who come to the hospitals.
+
+```{r}
+
+adp =  setNames(data.frame(
+  
+  Variable = c(rep("Facility",4), rep("Facility type",2),rep("District",2),rep("Month",3),rep("Overall",1)),
+  Category = c("Kustia DH","Kumarkhali UHC","Dinajpur DH","Hakimpur UHC","District","UHC","Kushtia","Dinajpur","November","Decmber","January","Overall"),
+  Percentage = c(79.14,99.76,91.26,100,81.07,99.79,82.55,92.59,89.93,83.84,79.7,84.12),
+  "Lower" = c(77.88,99.14,89.08,0,79.96,99.25,81.47,90.72,88.41,82.21,77.93,83.18),
+  "Upper" = c(80.36,99.97,93.12,0,82.14,99.97,83.58,94.17,91.3,85.38,81.38,85.04)
+), c("Variable", "Category","Percentage","Lower CI","Upper CI"))
+kbl(adp,caption = "Adoption Table", align = "c") %>%
+    kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  add_header_above(c(" "," "," ", "95% Confidence interval" = 2)) %>% 
+  collapse_rows(columns = 1:2, valign = "middle")%>% kable_styling(latex_options = "hold_position")
+```
+
+\newpage
+
+### Accuracy tables
+Suppose nurses filled up all of the questions. But there is a question whether they filled up all correct information of not.So their filled up questions are matched with icddr,b nurses.This summarization is printed in the accuracy table. 
+
+```{r}
+cbc = setNames(data.frame(
+  
+  Variable = c(rep("Facility",4), rep("Facility type",2),rep("District",2),rep("Month",3),rep("Overall",1)),
+  Category = c("Kustia DH","Kumarkhali UHC","Dinajpur DH","Hakimpur UHC","District","UHC","Kushtia","Dinajpur","November","Decmber","January","Overall"),
+  n = c(1616,594,517,2,2133,596,2210,519,814,978,917,2729),
+ Percentage= c(77.36,95.19,95.92,100,81.16,95.21,81.46,95.93,81.48,83.95,86.27,83.81),
+ n = c(1856,623,532,2,2388,625,2479,534,942,1070,975,3013),
+ Percenateg = c(88.85,99.84,98.7,100,90.87,99.84,91.37,98.71,94.29,91.85,91.72,92.6)
+),c("Variable", "Category","n","Percentage","n","Percentage"))
+kbl(cbc,caption ="Accuracy of CBC and Electrolyte" , align = "c") %>%
+  kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  collapse_rows(columns = 1:2, valign = "middle") %>% 
+  add_header_above(c(" "," ", "CBC" = 2, "Electrolyte" = 2))%>% kable_styling(latex_options = "hold_position")
+
+
+blood = setNames(data.frame(
+  
+  Variable = c(rep("Facility",4), rep("Facility type",2),rep("District",2),rep("Month",3),rep("Overall",1)),
+  Category = c("Kustia DH","Kumarkhali UHC","Dinajpur DH","Hakimpur UHC","District","UHC","Kushtia","Dinajpur","November","Decmber","January","Overall"),
+  "n" = c(2003,623,539,2,2542,625,2626,541,970,1128,1043,3167),
+  "Percentage" = c(95.88,99.84,100,100,96.73,99.84,96.79,100,97.1,96.82,98.12,97.33),
+  "n " = c(1622,600,523,2,2145,602,2222,525,837,981,911,2747),
+  "Percenteg " = c(77.64,96.15,97.03,100,81.62,96.17,81.9,97.14,83.78,84.1,85.7,84.37)
+),c("Variable", "Category","n","Percentage","n","Percentage"))
+
+kbl(blood,caption ="Accuracy of Blood Suger and Chest X-ray" , align = "c") %>%
+  kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  collapse_rows(columns = 1:2, valign = "middle") %>% 
+  add_header_above(c(" "," ", "Blood Suger" = 2, "Chest X-ray" = 2))%>% kable_styling(latex_options = "hold_position")
+
+oxy= setNames(data.frame(
+  
+  Variable = c(rep("Facility",4), rep("Facility type",2),rep("District",2),rep("Month",3),rep("Overall",1)),
+  Category = c("Kustia DH","Kumarkhali UHC","Dinajpur DH","Hakimpur UHC","District","UHC","Kushtia","Dinajpur","November","Decmber","January","Overall"),
+  "n" = c(1422,577,367,2,1789,579,1999,369,685,892,776,2368),
+  "Percentage" = c(68.07,92.47,68.09,100,68.07,92.49,73.68,68.1,68.57,76.57,73,72.73),
+  "n " = c(1697,503,447,2,2144,505,2200,449,384,953,891,2649),
+  "Percenteg " = c(81.24,80.61,82.93,100,81.58,80.67,81.09,82.99,78.48,81.8,83.82,81.39)
+),c("Variable", "Category","n","Percentage","n","Percentage"))
+kbl(oxy, caption ="Accuracy of Oxygen and IV fluid" ,align = "c") %>%
+  kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  collapse_rows(columns = 1:2, valign = "middle") %>% 
+  add_header_above(c(" "," ", "Oxygen" = 2, "IV fluid" = 2))%>% kable_styling(latex_options = "hold_position")
+
+
+inj= setNames(data.frame(
+  
+  Variable = c(rep("Facility",4), rep("Facility type",2),rep("District",2),rep("Month",3),rep("Overall",1)),
+  Category = c("Kustia DH","Kumarkhali UHC","Dinajpur DH","Hakimpur UHC","District","UHC","Kushtia","Dinajpur","November","Decmber","January","Overall"),
+  "n" = c(819,367,377,2,1196,369,1186,379,555,558,439,1565),
+  "Percentage" = c(39.21,58.81,69.94,100,45.51,58.95,43.72,70.06,55.56,47.9,41.3,48.07),
+  "n " = c(2077,615,536,2,2613,617,2692,538,994,1157,1052,3230),
+  "Percenteg " = c(99.43,98.56,99.44,100,99.43,98.56,99.23,99.45,99.5,99.31,98.97,99.26)
+),c("Variable", "Category","n","Percentage","n","Percentage"))
+kbl(inj,caption ="Accuracy of Injectable antibiotics and Inj Ampicilin" , align = "c") %>%
+  kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  collapse_rows(columns = 1:2, valign = "middle") %>% 
+  add_header_above(c(" "," ", "Injectable antibiotics	" = 2, "Inj Ampicilin	" = 2))%>% kable_styling(latex_options = "hold_position")
+
+
+gen=  setNames(data.frame(
+  
+  Variable = c(rep("Facility",4), rep("Facility type",2),rep("District",2),rep("Month",3),rep("Overall",1)),
+  Category = c("Kustia DH","Kumarkhali UHC","Dinajpur DH","Hakimpur UHC","District","UHC","Kushtia","Dinajpur","November","Decmber","January","Overall"),
+  "n" = c(1876,573,538,2,2414,575,2449,540,909,1066,990,2989),
+  "Percentage" = c(89.8,91.83,99.81,100,91.86,91.85,90.27,99.82,90.99,91.5,93.13,91.83),
+  "n " = c(1841,570,388,2,2229,572,2411,390,852,1010,916,2801),
+  "Percenteg " = c(88.13,91.35,71.99,100,84.82,91.37,88.87,72.09,85.29,86.7,86.17,86.03)
+),c("Variable", "Category","n","Percentage","n","Percentage"))
+kbl(gen,caption ="Accuracy of Inj Gentamicin and Inj Ceftriaxone" , align = "c") %>%
+  kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  collapse_rows(columns = 1:2, valign = "middle") %>% 
+  add_header_above(c(" "," ", "Inj Gentamicin	" = 2, "Inj Ceftriaxone	" = 2))%>% kable_styling(latex_options = "hold_position")
+
+
+
+newb=  setNames(data.frame(
+  
+  Variable = c(rep("Facility",4), rep("Facility type",2),rep("District",2),rep("Month",3),rep("Overall",1)),
+  Category = c("Kustia DH","Kumarkhali UHC","Dinajpur DH","Hakimpur UHC","District","UHC","Kushtia","Dinajpur","November","Decmber","January","Overall"),
+  "n" = c(2044,621,528,2,2572,623,2665,730,971,1148,1050,3195),
+  "Percentage" = c(97.81,99.52,97.96,100,97.87,99.52,98.23,97.97,97.2,98.58,98.78,98.19),
+  "n " = c(1930,623,479,2,2409,625,2553,481,927,1091,990,3034),
+  "Percenteg " = c(92.39,99.84,88.87,100,91.67,99.84,94.1,88.91,92.79,93.6,93.13,93.24)
+),c("Variable", "Category","n","Percentage","n","Percentage"))
+kbl(newb,caption ="Accuracy of Newborn Sepsis and Birth Asphyxia" , align = "c") %>%
+  kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  collapse_rows(columns = 1:2, valign = "middle") %>% 
+  add_header_above(c(" "," ", "Newborn Sepsis	" = 2, "Birth Asphyxia" = 2))%>% kable_styling(latex_options = "hold_position")
+
+
+ref=  setNames(data.frame(
+  
+  Variable = c(rep("Facility",4), rep("Facility type",2),rep("District",2),rep("Month",3),rep("Overall",1)),
+  Category = c("Kustia DH","Kumarkhali UHC","Dinajpur DH","Hakimpur UHC","District","UHC","Kushtia","Dinajpur","November","Decmber","January","Overall"),
+  "n" = c(2003,624,533,2,2536,626,2627,535,969,1141,1026,3162),
+  "Percentage" = c(95.88,100,98.89,100,96.5,100,96.83,98.89,97,97.94,96.52,97.17),
+  "n " = c(1846,576,471,2,2317,578,2422,473,892,1031,951,2895),
+  "Percenteg " = c(88.37,92.31,87.38,100,88.17,92.33,89.27,87.43,89.29,88.5,89.46,88.94),
+  "n" = c(1971,622,535,2,2506,624,2593,537,966,1114,1025,3130),
+  "Percent. "= c(94.35,99.68,99.26,100,95.36,99.68,95.58,99.26,96.7,95.62,96.43,96.19)
+), c("Variable", "Category","n","Percentage","n","Percentage" ,"n","Percentage" ) )
+kbl(ref,caption = "Accuracy of Prematurity and LBW and Severe Pneumonia", align = "c") %>%
+  kable_paper(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  collapse_rows(columns = 1:2, valign = "middle") %>% 
+  add_header_above(c(" "," ", "Prematurity and LBW" = 2, "Severe Pneumonia" = 2,"Refer	" = 2))%>% kable_styling(latex_options = "hold_position")
+
+```
+
+
+
+# Results of Analysis
+
+
+The overall table shows that in the register, about 50% of the data are from the 1–5-year-old age group. About 60% of the data is collected from male groups; about 68% of the data is from Kushtia district; and almost 50–50% of the data is collected from both the district hospital (DH) and the Upazila health complex (UHC). Collected data is increasing month by month. The first month has the lowest collected data, and January has the highest collected data. Diarrhoea and Pneumonia patient's data are collected from respectively 16.08% and 10.66%. 44.92% of patients are discharged with advice only. The completeness table shows that among 11737 participants, 11650 registration numbers are filled up, which is about 99.26%. The table shows that in District hospitals, the completeness of registration numbers is quite lower than at UHC. Dinajpur district has a very high completeness of registration numbers, but there is a decreasing trend in the completeness of registration numbers by month. 99.30% of the data are collected without supervision. The completeness table shows that among 11737 participants, 11592 participants with dates of admission are filled up, which is about 98.76%. The table shows that in District hospitals, the completeness of the date of admission is quite lower than at UHC. Dinajpur district has a high completeness of registration numbers, and in every month of admission completion, the rate is 100%. 99.11% of the data are collected without supervision. The completeness table shows that among 11737 participants, 10320 at the time of admission were filled up, which is about 87.93%. The table shows that in District hospitals, the completion time of admission is quite higher than at UHC. Dinajpur district has a very low completeness of time of admission, but there is a decreasing trend in the completeness of time of admission by month. 86.76% of the data were collected without supervision. The completeness table shows that among 11737 participants, 11697 names are filled up, which is about 99.66%. The table shows that in District hospitals, the completeness of names is quite higher than at UHC. Dinajpur district has a low completeness of name, but there is an increasing trend in the completeness of name by month. 99.53% of the data were collected without supervision. The completeness table shows that all the participants ages are filled up. The completeness table shows that among 11737 participants, 11175 participants sexes are filled up, which is about 95.21%. The table shows that in District hospitals, the completeness of sex is quite lower than at UHC. Dinajpur district has a high completeness of sex, and in November, the completion of sex is high. 96.46% of the data were collected without supervision. The completeness table shows that among 11737 participants, 11399 districts are filled up, which is about 97.12%. The table shows that in District hospitals, the completeness of the district is quite higher than at UHC. Dinajpur district has a high completion rate, and in November, the completion rate of the district is high. 95.80% of the data are collected without supervision. The completeness table shows that among 11737 participants, 1269 have "investigaton done,"  which is about 10.81% of the overall population. The table shows that in District hospitals, the completeness of "investigation done" is much higher than at UHC. Dinajpur district has a very low completeness of "investigaton done," and on November, completion of "investigaton done" is high, and then it decreases. Only 1.50% of the data is collected without supervisors. The completeness table shows that among 11737 participants, 8391 "care received during admission" are filled up, which is about 71.49% of the overall population. The table shows that in UHC hospitals, the completeness of "care received during admission" is much higher than at District hospitals. Dinajpur district has a high completeness of "care received during admission," and in January, the completion of "care received during admission" was high. 74.08% of the data were collected without supervision. The completeness table shows that among 11737 participants, 10241 "drug received during admission" are filled up, which is about 87.25% of the overall population. The table shows that in UHC hospitals, the completeness of "drug received during admission" is much higher than at District hospitals. Dinajpur district has a high completeness of "drug received during admission," and in January, the completion of "drug received during admission" was high. 94.38% of the data were collected without supervision. The completeness table shows that among 11737 participants, 8229 have "final diagnosis,"  which is about 70.11% of the overall population. The table shows that in UHC hospitals, the completeness of the "final diagnosis" is much higher than at District hospitals. Dinajpur district has a high completeness of "final diagnosis," and in December, the completion of "final diagnosis" is high. 79.36% of the data were collected without supervision. The completeness table shows that among 11737 participants, 8865 "outcomes of treatment" are filled up, which is about 75.53% of the overall population. The table shows that in UHC hospitals, the completeness of the "outcome of treatment" is much higher than at District hospitals. Dinajpur district has a high completion rate of outcome of treatment, and in November, the completion rate of "outcome of treatment" was high. 81.10% of the data were collected without supervision. The completeness table shows that among 11737 participants, 769 "all items" are filled up, which is about 6.55% of the overall population. The table shows that in District hospitals, the completeness of "all items" is much higher than at UHC. Dinajpur district has a very low completeness of "all items," and on November, completion of "all items" is high, and then it decreases. 10.50% of the data are collected under supervision. The completeness table shows that among 11737 participants, 8327 "at least 10 items" are filled up, which is about 70.95% of the overall population. The table shows that in District hospitals, the completeness of "at least 10 items" is much lower than at UHC. Dinajpur district has a high completeness of "at least 10 items," and in November, the completion of "at least 10 items" is high, and then it decreases. 76.63% of the data were collected without supervision. The "Quality of Care" table shows that only 32 patients got oxygen saturation care among those whose oxygen saturation level is less than 93%, which is only 19.39% of the overall oxygen-need population. Tables show that of patients whose oxygen saturation level is less than 93%, 66.67% got this facility in District, which is about 5 times better than UHC. Both in Kustia and Dinajpur districts, it is low, but in Dinajpur district, it is quite higher than in Kushtia, and this facility is increasing by the month, with 45.28% of people getting it under supervisors. The "Quality of Care" table shows that only 36 patients got "Antibiotic Injection," which is 61.02% of the overall population that needs this facility. Tables show that "antibiotic Injection" is given more in District hospitals, and it is about 3.5 times greater than UHC. In Kushtia district, it is four times higher than in Dinajpur district, and this percentage is gradually increasing by the month. 45% of people get it from supervisors. The "Quality of Care" table shows that among those who had severe pneumonia and needed oxygen facilities,  536 patients got oxygen facilities, which is about 43% of that population. District hospitals provided more oxygen to pneumonia patients than UHC, and it was about three times higher. In Kushtia district, pneumonia patients got more oxygen facilities than in Dinajpur district, and it was about 4 times higher. In December, patients got high oxygen facilities under supervision. 52.58% of people got oxygen, which is about 6 times higher than without supervisors. The "Quality of Care" table shows that among those who had severe pneumonia and needed "Antibiotic Injection, 522 patients got this facility, which is about 42% of that population. UHC provided more "antibiotic injections" to pneumonia patients than district hospitals. In Dinajpur district, pneumonia patients got more "antibiotic Injection" than in Kushtia district, and it decreased gradually by month. Without supervisors, 42% got this facility.
+The adoption table shows how many patient records are registered in the registry system. The table shows that Upazila hospitals registered more data than district hospitals. Kumarkhali UHC records 99.76% of the information of incoming patients, and Hakimpur UHC records all the information of incoming patients. Dinajpur district hospitals record 91% information, and Kustia district records 79% information. Dinajpur district's hospitals have more registered patients than Kushtia district's hospitals. The quantity of recorded data decreases by the month. 
+The Accuracy of CBC and Electrolyte" table shows that Hakimpur UHC has a higher CBC accuracy as it has only 2 registered data points. Dinajpur DH has 95.92% accuracy on recording CBC. District hospitals have a much higher population than UHC, and as a result, district hospitals have a lower accuracy on recording CBC than UHC, and the accuracy is increasing month by month. Overall, CBC accuracy is 83.31%. In the case of electrolyte accuracy, it is high in Kumarkhali UHC, and this accuracy is also higher in UHC than district hospitals. In Dinajpur district, this accuracy is higher than Kushtia, but this accuracy is decreasing by the month. Electrolyte overall accuracy is 92.60%. The Accuracy of Blood Suction and Chest X-ray" table shows that Hakimpur UHC and Dinajpur DH correctly registered all blood suction data, and others also have a high accuracy rate. District hospitals have a much higher population than UHC, and as a result, district hospitals have lower accuracy on recording blood sugar than UHC, but that is not so much different, and the accuracy has an up and down trend. Overall blood sugar accuracy is 97.33%. In the case of chest x-ray accuracy, it is high in Kumarkhali UHC and Dinajpur DH, but Kustia DH performs worse again. This accuracy is higher in UHC than district hospitals, and In Dinajpur district, this accuracy is higher than Kushtia, and this accuracy is increasing by the month. The chest x-ray's overall accuracy is 84.37%. The Accuracy of Oxygen and IV Fluid" table shows that Hakimpur UHC correctly registered all oxygen data and Kumarkhali UHC has an accuracy rate of 92.47%, but the others perform worst. District hospitals have a much higher population than UHC, and as a result, district hospitals have a lower accuracy on recording oxygen data than UHC, and there is a huge difference. The accuracy has a down, up, and down trend. Overall oxygen accuracy is 72.73%. In the case of IV fluid, accuracy is high in Kumarkhali UHC, and others perform almost the same. This accuracy is high in district hospitals, and In Dinajpur district, this accuracy is higher than Kushtia, and this accuracy is increasing by the month. IV fluid's overall accuracy is 81.39%. The Accuracy of Injectable Antibiotics and Injectable Ampicilin" table shows that Hakimpur UHC correctly registered all injectable antibiotic data, Kustia DH performed the worst (39.51%), and other performers were not satisfactory. District hospitals have a much higher population than UHC, and as a result, district hospitals have lower accuracy on recording injectable antibiotic data than UHC, and in both cases, accuracy is not satisfactory. The accuracy has a decreasing trend by month. Overall, injectable antibiotic accuracy is 48.07%. In the case of injectable Ampicilin, accuracy is high in Kumarkhali UHC, and others perform almost the same with high accuracy. This accuracy is high in district hospitals, and In Dinajpur district, this accuracy is slightly higher than Kushtia, and this accuracy is showing an increasing trend by month. Injectable Ampicilin's overall accuracy is 99.26%. The Accuracy of injectable Gentamicin and injectable Ceftriaxone" table shows that Hakimpur UHC correctly registered all injectable Gentamicin data, Dinajpur DH performs very well (99.81%), and Kustia DH performs less than others (89.80%). District Hospital has a much higher population than UHC, but both of them perform similarly, and Dinajpur District has a high accuracy rate. The accuracy has an increasing trend by the month. Overall injectable Gentamicin accuracy is 91.83%. In the case of injectable Ceftriaxone, accuracy is high in Kumarkhali UHC, and Dinajpur DH performs worst (71.99%). This accuracy is high in UHC (91.37%) and Kustia (88.87%) districts; this accuracy is higher than Dinajpur (72%), and this accuracy has a small but increasing trend by month. Injectable ceftriaxone's overall accuracy is 86.03%. The Accuracy of Newborn Sepsis and Birth Asphyxis" table shows that Hakimpur UHC correctly registered all newborn sepsis data and others performed very well. District hospital has a much higher population than UHC, but both of them perform well, and UHC performs slightly better than district hospital, and Kustia district has a high accuracy rate. The accuracy has an increasing trend by the month. Overall newborn sepsis accuracy is 98.19%. In the case of birth asphyxis, Kumarkhali UHC also has a very high accuracy (99.84%), but Dinajpur DH (88.87%) performs slightly worse than all. This accuracy is high in UHC (99.84%) and In Kustia (94.10%) district; this accuracy is higher than in Dinajpur (88.91%), and this accuracy has an increasing trend by month. Birth asphyxiation's overall accuracy is 93.24%. The Accuracy of Prematurity and LBW and Severe Pneumonia and Refer" table shows that Hakimpur and Kumarkhali UHC correctly registered all Prematurity and LBW data, and others also performed very well. District hospital has a much higher population than UHC, but both of them perform well; UHC performs exceptionally well with 100% accuracy, and Dinajpur district has a high accuracy rate. The accuracy increases in the first month, but then decreases. Overall Prematurity and LBW accuracy are 97.17%. In the case of severe pneumonia, Kumarkhali UHC has a very high accuracy (92.31%), and others results are satisfactory. This accuracy is high in UHC (92.33%) and In Kustia (89.27%) district; this accuracy is higher than in Dinajpur (87.43%), and this accuracy has an up and down trend by month. Severe pneumonia's overall accuracy is 88.94%. In the case of Kustia DH, she performs slightly poorly, but others perform outstandingly. UHC has higher accuracy than district hospitals. Dinajpur district has a higher accuracy than Kushtia, and there is also an up and down trend. The overall accuracy is 96.19%.
+
+#
+
+## Conclusion
+
+From the tables,it is seen that in some cases, district hospitals complete more items than upazila health complexes (UHC), and sometimes UHC does better than district hospitals. But in terms of quality of care, district hospitals outperform UHC. Adoption table shows that service providers try to record the information of all patients comming to the hospitals. In terms of accuracy, UHC performs much better. This is because the population coming to the district hospital is higher than at UHC. Because of this traffic, these problems occur. So these problems can be solved by increasing manpower (nurses), increasing the training of nurses, and solving other problems that arise in hospitals.If this registration system's accuracy increases day by day and if it performs well in others district and UHC, then it can be computerized, efficiency can be improved, and a very strong database system can be introduced to our health system that will help our medical system.
+
+## Future works
+
+After these descriptive works, our main goal is to turn it into a model and find out the acceptance ratio of this register system.In this case, our interested question is "Whether service providers acceptance these question or not". This data is already collected from service providers by icddr,b. Now have to implement them and go into the depths of the dataset and try to make a strong policy later to develop our health facility system.
+
+
+# References
+
